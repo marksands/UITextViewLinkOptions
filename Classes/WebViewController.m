@@ -26,13 +26,13 @@ typedef enum {
 
 - (id) initWithURL:(NSURL *)u
 {
-  if ( self = [super init] ) {
-
+  if ( self = [super init] )
+  {
     backButton    = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
     forwardButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"forward.png"] style:UIBarButtonItemStylePlain target:self action:@selector(goForward)];
     actionButton  = [[UIBarButtonItem	alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(doAction)];
 
-    toolbar						= [UIToolbar new];
+    toolbar           = [UIToolbar new];
     toolbar.barStyle  = UIBarStyleDefault;
     toolbar.tintColor = [UIColor lightGrayColor];
     
@@ -44,8 +44,8 @@ typedef enum {
                                  CGRectGetWidth(mainViewBounds),
                                  toolbarHeight)];		
 
-    webView									= [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 380)];
-    webView.delegate				= self;
+    webView                 = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 380)];
+    webView.delegate        = self;
     webView.scalesPageToFit = YES;
 
     url = [u copy];

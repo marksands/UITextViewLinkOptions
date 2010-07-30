@@ -10,7 +10,7 @@
 	1D3623250D0F684500981E51 /* UITextViewLinkOptionsAppDelegate.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1167, 637}}";
-			sepNavSelRange = "{41, 0}";
+			sepNavSelRange = "{529, 0}";
 			sepNavVisRange = "{0, 999}";
 		};
 	};
@@ -81,6 +81,7 @@
 			4D9170041202C19F0009F554 = 4D9170041202C19F0009F554 /* PBXTextBookmark */;
 			4D9170061202C1AD0009F554 = 4D9170061202C1AD0009F554 /* PBXTextBookmark */;
 			4D9170111202C1C10009F554 /* PBXTextBookmark */ = 4D9170111202C1C10009F554 /* PBXTextBookmark */;
+			4D9170171202C2950009F554 /* PBXTextBookmark */ = 4D9170171202C2950009F554 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 4D6A98AC1202A4660091705E /* Source Control */;
 		userBuildSettings = {
@@ -235,6 +236,16 @@
 		name = "UITextViewLinkOptionsAppDelegate.m: 2";
 		rLen = 0;
 		rLoc = 41;
+		rType = 0;
+		vrLen = 999;
+		vrLoc = 0;
+	};
+	4D9170171202C2950009F554 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* UITextViewLinkOptionsAppDelegate.m */;
+		name = "UITextViewLinkOptionsAppDelegate.m: 19";
+		rLen = 0;
+		rLoc = 529;
 		rType = 0;
 		vrLen = 999;
 		vrLoc = 0;

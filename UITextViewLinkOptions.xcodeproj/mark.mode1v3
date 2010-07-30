@@ -332,7 +332,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D9170111202C1C10009F554</string>
+										<string>4D9170171202C2950009F554</string>
 										<key>history</key>
 										<array>
 											<string>4D916FD31202BF380009F554</string>
@@ -539,6 +539,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>4D6A99061202AB5A0091705E</string>
 		<string>/Users/mark/Repositories/UITextViewLinkOptions/UITextViewLinkOptions.xcodeproj</string>
 	</array>
@@ -664,8 +666,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 185}}</string>
-											<string>{{316, 0}, {378, 185}}</string>
+											<string>{{0, 0}, {316, 194}}</string>
+											<string>{{316, 0}, {378, 194}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -680,8 +682,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 185}}</string>
-											<string>{{0, 185}, {694, 196}}</string>
+											<string>{{0, 0}, {694, 194}}</string>
+											<string>{{0, 194}, {694, 187}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -714,7 +716,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 185}}</string>
+									<string>{{316, 0}, {378, 194}}</string>
 									<key>RubberWindowFrame</key>
 									<string>25 433 694 422 0 0 1440 878 </string>
 								</dict>
@@ -742,13 +744,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>4D916F191202B6710009F554</string>
+				<string>4D9170181202C2950009F554</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>4D916F1A1202B6710009F554</string>
-				<string>4D916F1B1202B6710009F554</string>
-				<string>4D916F1C1202B6710009F554</string>
-				<string>4D916F1D1202B6710009F554</string>
-				<string>4D916F1E1202B6710009F554</string>
+				<string>4D9170191202C2950009F554</string>
+				<string>4D91701A1202C2950009F554</string>
+				<string>4D91701B1202C2950009F554</string>
+				<string>4D91701C1202C2950009F554</string>
+				<string>4D91701D1202C2950009F554</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -875,8 +877,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -912,7 +912,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>4D916F1F1202B6710009F554</string>
+				<string>4D91701E1202C2950009F554</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

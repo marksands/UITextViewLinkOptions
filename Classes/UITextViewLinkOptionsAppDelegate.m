@@ -13,7 +13,7 @@
 
 - (BOOL)customOpenURL:(NSURL*)url
 {
-  UITextViewLinkOptionsAppDelegate	*MyWatcher = [[UIApplication sharedApplication] delegate];
+  UITextViewLinkOptionsAppDelegate *MyWatcher = [[UIApplication sharedApplication] delegate];
   if (MyWatcher.currentViewController) {
     [MyWatcher.currentViewController handleURL:url];
     return YES;
@@ -37,10 +37,11 @@
   return YES;
 }
 
-- (void)dealloc {
-	[navigationController release];
-	[window release];
-	[super dealloc];
+- (void)dealloc
+{
+  [navigationController release];
+  [window release];
+  [super dealloc];
 }
 
 

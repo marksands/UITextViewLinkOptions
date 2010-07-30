@@ -57,7 +57,7 @@ It's very hacky and somewhat dangerous, so I don't necessarily recommend it, but
 
 With method swizzling, you swap implementations between separate methods. For this to be possible with `OpenURL` I still had to create a `UIApplication (Private)` category, but I named my new method `customOpenURL:(NSURL*)url` instead. Now I could swizzle between `OpenURL` and `customOpenURL`. All I had to do now was swizzle the implementations on initialization and when the user is in the custom UIWebView controller I unswizzle them to open in Safari. Great success.
 
-I understand this might be confusing, especially if you're new to Objective-C or iPhone development, but this is a really handy trick. I'm sure there's plenty of things out there that you can apply this solution to. But my main focus was getting URL detection to open in a custom UIWebView or Safari, and I found that solution. I hope this helps!\
+I understand this might be confusing, especially if you're new to Objective-C or iPhone development, but this is a really handy trick. I'm sure there's plenty of things out there that you can apply this solution to. But my main focus was getting URL detection to open in a custom UIWebView or Safari, and I found that solution. I hope this helps!
 
 ### The Blog Post
 

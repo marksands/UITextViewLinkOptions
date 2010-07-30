@@ -22,6 +22,8 @@ I owe a lot of my UIWebView code to the open sourced version of [TwitterFon](htt
 
 This part was hard to figure out, initially. I eventually found [this post](http://stackoverflow.com/questions/1889262/iphone-sdk-opening-links-in-a-uitextview-in-a-web-view/2251898#2251898) on stackoverflow. What they say to do is basically create a UIApplication category to override `openURL`. You would also need some sort of watcher to keep track of your current view controller. I threw something [hacky](http://github.com/marksands/UITextViewLinkOptions/blob/master/Classes/UITextViewLinkOptionsAppDelegate.m#L14-22) together and found that it worked.
 
+    @implementation UIApplication (Private)
+
     - (BOOL)customOpenURL:(NSURL*)url
     {
       AppDelegate *watcher = [[UIApplication sharedApplication] delegate];
@@ -31,7 +33,8 @@ This part was hard to figure out, initially. I eventually found [this post](http
     	}
       return NO;
     }
-
+    
+    @end
 
 This solution works, but it's win/lose. You have the ability to open all links in your custom webview, but now it's impossible to invoke UIApplication's `openURL` which opens Safari since you are overriding the method.
 

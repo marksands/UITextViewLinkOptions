@@ -5,7 +5,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 #import <objc/runtime.h>
-#import "UITextViewLinkOptionAppDelegate.h"
+#import "UITextViewLinkOptionsAppDelegate.h"
 #import "WebViewController.h"
 
 typedef enum {
@@ -69,7 +69,7 @@ typedef enum {
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
-  UITextViewLinkOptionAppDelegate *MyWatcher = [[UIApplication sharedApplication] delegate];
+  UITextViewLinkOptionsAppDelegate *MyWatcher = [[UIApplication sharedApplication] delegate];
   MyWatcher.currentViewController = nil;
 
   // swizzle methods, from here we want to open Safari

@@ -6,9 +6,7 @@
 //  Copyright __MyCompanyName__ 2010. All rights reserved.
 //
 
-#import <objc/runtime.h>
 #import "UITextViewLinkOptionsAppDelegate.h"
-
 #import "RootViewController.h"
 #import "WebViewController.h"
 
@@ -34,10 +32,6 @@
   // swap implementation, we want to go to our custom WebViewController from this view
   UITextViewLinkOptionsAppDelegate *MyWatcher = [[UIApplication sharedApplication] delegate];
   MyWatcher.currentViewController = self;
-
-  Method customOpenUrl = class_getInstanceMethod([UIApplication class], @selector(customOpenURL:));
-  Method openUrl = class_getInstanceMethod([UIApplication class], @selector(openURL:));
-  method_exchangeImplementations(customOpenUrl, openUrl);
 }
 
 // called by our customOpenURL method

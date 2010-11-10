@@ -8,6 +8,7 @@
 
 #import "UITextViewLinkOptionsAppDelegate.h"
 #import "RootViewController.h"
+#import <objc/runtime.h>
 
 @implementation UIApplication (Private)
 
@@ -36,6 +37,15 @@
 
   return YES;
 }
+
+// This is key for method swizzling to re-swizzle when an app returns from the background
+- (void)applicationDidBecomeActive:(UIApplication *)application {  
+  Method customOpenUrl = class_getInstanceMethod([UIApplication class], @selector(customOpenURL:));
+  Method openUrl = class_getInstanceMethod([UIApplication class], @selector(openURL:));
+  
+  method_exchangeImplementations(openUrl, customOpenUrl);	
+}
+
 
 - (void)dealloc
 {

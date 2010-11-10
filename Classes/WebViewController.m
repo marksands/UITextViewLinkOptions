@@ -69,13 +69,6 @@ typedef enum {
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
-  UITextViewLinkOptionsAppDelegate *MyWatcher = [[UIApplication sharedApplication] delegate];
-  MyWatcher.currentViewController = nil;
-
-  // swizzle methods, from here we want to open Safari
-  Method customOpenUrl = class_getInstanceMethod([UIApplication class], @selector(customOpenURL:));
-  Method openUrl = class_getInstanceMethod([UIApplication class], @selector(openURL:));
-  method_exchangeImplementations(customOpenUrl, openUrl);	
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -125,7 +118,14 @@ typedef enum {
 {
   if (as.cancelButtonIndex == buttonIndex) return;
 
-  if (buttonIndex == 0) {
+  if (buttonIndex == 0) {    
+    // swizzle methods, from here we want to open Safari
+    
+    Method customOpenUrl = class_getInstanceMethod([UIApplication class], @selector(customOpenURL:));
+    Method openUrl = class_getInstanceMethod([UIApplication class], @selector(openURL:));
+
+    method_exchangeImplementations(customOpenUrl, openUrl);	
+    
     [[UIApplication sharedApplication] openURL:self.url];
   }
 }

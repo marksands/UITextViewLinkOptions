@@ -104,7 +104,7 @@ typedef enum {
 
 - (void) doAction
 {
-  UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+  UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:[self.url absoluteString]
                                                            delegate:self
                                                   cancelButtonTitle:@"Cancel"
                                              destructiveButtonTitle:nil
@@ -149,6 +149,7 @@ typedef enum {
   [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
   self.title = [aWebView stringByEvaluatingJavaScriptFromString:@"document.title"];
   [self updateToolbar:BUTTON_RELOAD];
+  self.url = aWebView.request.mainDocumentURL;
 }
 
 - (void)webView:(UIWebView *)aWebView didFailLoadWithError:(NSError *)error

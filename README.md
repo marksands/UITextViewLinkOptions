@@ -2,6 +2,10 @@
 
 This application demonstrates how to detect links within a `UITextView` which open in a custom `UIWebView` controller. With the custom controller providing the user the option to open the url in mobile Safari.
 
+# Disclaimer
+
+Please understand that using this technique *probably* won't get your app approved for the App Store from the review team. Please resort to other methods or check out my latest workaround [here](https://github.com/marksands/MSTextView).
+
 ## Detecting Links
 
 There is surprisingly little to no information on the Internet regarding this solution. Detecting links within a UITextView is the easy part.
